@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout com CSS Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         * {
             font-size: 16px;
@@ -13,7 +15,7 @@
             padding: 0;
         }
 
-        .container {
+        .body-container {
             display: grid;
             grid-template-areas:
                 "header header header"
@@ -54,22 +56,84 @@
             text-align: center;
             padding: 1rem;
         }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .7rem;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="body-container">
         <div class="header">Logo | Título | Menu</div>
         <div class="sidebar">Menu Lateral</div>
         <div class="main main-container">
-                <div class="card" style="width: 18rem;">
-        <img src="./img/DysonSupersonic.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Dyson Supersonic™ Secador de Cabelo</h5>
-            <p class="card-text">Secador, bico concentrador, difusor, acessório flyaway, acessório de ar suave, pente de dentes largos (pode variar conforme o kit). </p>
-            <a href="#" class="btn btn-primary">Compre aqui</a>
-        </div>
-    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/DysonAirwrap.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Airwrap™ Multiestilizador de cabelo </h5>
+                    <p class="card-text">O secador e modelador multifuncional Coanda pode ser utilizado em ambas
+                        direções para entregar um acabamento elegante aos fios. Seu cabelo mais liso e mais alinhado, do
+                        jeito que você sempre quis. </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../img/DysonSupersonic.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Supersonic™ Secador de Cabelo</h5>
+                    <p class="card-text">Secador, bico concentrador, difusor, acessório flyaway, acessório de ar suave,
+                        pente de dentes largos (pode variar conforme o kit). </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../img/DysonCorrale.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Corrale™ Alisador de cabelo Bivolt</h5>
+                    <p class="card-text">Modelador premium que utiliza placas flexíveis para alinhar os fios com mais
+                        precisão e menos calor, reduzindo danos. Sem fio e com design moderno, oferece praticidade,
+                        controle de temperatura inteligente e resultados de salão em casa. </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/DysonCorrale.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Corrale™ Alisador de cabelo Bivolt</h5>
+                    <p class="card-text">Modelador premium que utiliza placas flexíveis para alinhar os fios com mais
+                        precisão e menos calor, reduzindo danos. Sem fio e com design moderno, oferece praticidade,
+                        controle de temperatura inteligente e resultados de salão em casa. </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+
+             <div class="card" style="width: 18rem;">
+                <img src="../img/DysonCorrale.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Corrale™ Alisador de cabelo Bivolt</h5>
+                    <p class="card-text">Modelador premium que utiliza placas flexíveis para alinhar os fios com mais
+                        precisão e menos calor, reduzindo danos. Sem fio e com design moderno, oferece praticidade,
+                        controle de temperatura inteligente e resultados de salão em casa. </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+             <div class="card" style="width: 18rem;">
+                <img src="../img/DysonCorrale.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dyson Corrale™ Alisador de cabelo Bivolt</h5>
+                    <p class="card-text">Modelador premium que utiliza placas flexíveis para alinhar os fios com mais
+                        precisão e menos calor, reduzindo danos. Sem fio e com design moderno, oferece praticidade,
+                        controle de temperatura inteligente e resultados de salão em casa. </p>
+                    <a href="#" class="btn btn-primary">Compre aqui</a>
+                </div>
+            </div>
+
+
         </div>
         <div class="footer">Rodapé</div>
     </div>
